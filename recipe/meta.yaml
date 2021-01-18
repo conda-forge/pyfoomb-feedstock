@@ -10,7 +10,7 @@ source:
   sha256: 23d970bf7e41cd1f7b90aede6d306ff0781f1d404fe257f1185537e1d1a52214
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -26,7 +26,7 @@ requirements:
     - pandas >=0.24
     - xlrd
     - openpyxl
-    - matplotlib
+    - matplotlib-base
     - seaborn
     - jupyter
     - psutil

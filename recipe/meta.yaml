@@ -1,5 +1,5 @@
 {% set name = "pyfoomb" %}
-{% set version = "2.17.2" %}
+{% set version = "2.17.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/MicroPhen/pyFOOMB/archive/v{{ version }}.tar.gz
-  sha256: 23d970bf7e41cd1f7b90aede6d306ff0781f1d404fe257f1185537e1d1a52214
+  sha256: bcfe06adcfc378f545ef4bc897dfc283c949e855a69ba7098ab9a188017ccae3
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'pyFOOMB is a framework for object oriented modelling of bioprocesses'
+  summary: pyFOOMB is a framework for object oriented modelling of bioprocesses
   description: |
     Intented application is the acessible modelling of simple to medium complex 
     bioprocess models, by programmatic means. In contrast to 'full-blown' software 

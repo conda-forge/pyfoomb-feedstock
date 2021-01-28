@@ -1,5 +1,5 @@
 {% set name = "pyfoomb" %}
-{% set version = "2.17.5" %}
+{% set version = "2.17.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/MicroPhen/pyFOOMB/archive/v{{ version }}.tar.gz
-  sha256: 0b5afb1d6fc629559ea6c37be667810b5dea8b86759089b0cc0fa5a4c1557a6a
+  sha256: e2ae8ce67cca7b4c4ddf8b39dfec4c123d8975f69dbdc41d310cb3677399bb02
 
 build:
   number: 0

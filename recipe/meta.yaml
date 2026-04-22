@@ -10,16 +10,16 @@ source:
   sha256: 6613b660bc960c9b7fe7ffb69ba26a491859047719a6ce46c9ace322ee81b8bf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - numpy
     - scipy
     - joblib
@@ -33,6 +33,8 @@ requirements:
     - pygmo >=2.14
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyfoomb
 
